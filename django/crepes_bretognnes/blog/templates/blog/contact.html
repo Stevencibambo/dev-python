@@ -1,7 +1,0 @@
-{% if env %} Votre message a bien ete envoye !{% endif %}
- 
-<form action="{% url 'contact' %}" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="submit" />
-</form>

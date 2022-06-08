@@ -1,7 +1,0 @@
-<h1>Liste des contact</h1>
-
-{% for contact in contacts %}
-    <h2>{{ contact.nom}}</h2>
-    Adresse : {{ contact.adresse|linebreaks}}</br>    
-    <img src="{{ contact.photo.url }}" width="340" height="280"/>
-{% endfor%}
